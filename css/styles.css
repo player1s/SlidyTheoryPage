@@ -1,0 +1,32 @@
+#risetheory {
+    position: absolute;
+    margin-left: 500px;
+    margin-top: 500px;
+}
+
+#about {
+    position: absolute;
+    margin-left: 1000px;
+    margin-top: 0;
+}
+
+#services {
+    position: absolute;
+    margin-left: 1000px;
+    margin-top: 1000px;
+}
+
+#portfolio {
+    position: absolute;
+    margin-left: 0;
+    margin-top: 1000px;
+}
+
+#contact {
+    position: absolute;
+    margin-left: 0;
+    margin-top: 0;
+}
+body {
+    overflow: hidden;
+}
