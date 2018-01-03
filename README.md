@@ -1,0 +1,3 @@
+# SlidyTheoryPage
+SlidyTheoryPage
+blurry
