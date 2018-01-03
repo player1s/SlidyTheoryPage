@@ -6,20 +6,20 @@
 
 #about {
     position: absolute;
-    margin-left: 1000px;
+    margin-left: 600px;
     margin-top: 0;
 }
 
 #services {
     position: absolute;
-    margin-left: 1000px;
-    margin-top: 1000px;
+    margin-left: 600px;
+    margin-top: 600px;
 }
 
 #portfolio {
     position: absolute;
     margin-left: 0;
-    margin-top: 1000px;
+    margin-top: 600px;
 }
 
 #contact {
