@@ -1,3 +1,3 @@
 # SlidyTheoryPage
 SlidyTheoryPage
-\nblurry
+blurry
