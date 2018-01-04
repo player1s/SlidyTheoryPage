@@ -1,32 +1,3 @@
-#riseTheoryTitle {
-    position: absolute;
-    margin-left: 500px;
-    margin-top: 500px;
-}
-
-#aboutLink {
-    position: absolute;
-    margin-left: 600px;
-    margin-top: 0;
-}
-
-#servicesLink {
-    position: absolute;
-    margin-left: 600px;
-    margin-top: 600px;
-}
-
-#portfolioLink {
-    position: absolute;
-    margin-left: 0;
-    margin-top: 600px;
-}
-
-#contactLink {
-    position: absolute;
-    margin-left: 0;
-    margin-top: 0;
-}
 body {
     overflow: hidden;
 }
