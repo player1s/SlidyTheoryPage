@@ -6,8 +6,10 @@
 
 #logo {
     position: absolute;
-    margin-left: 500px;
+    margin-left: 1200px;
     margin-top: 500px;
+    width: 250px;
+    height: auto;
 }
 
 #motto {
