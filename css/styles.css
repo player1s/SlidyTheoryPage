@@ -1,7 +1,27 @@
-#riseTheoryTitle {
+ #riseTheoryTitle {
     position: absolute;
     margin-left: 500px;
     margin-top: 500px;
+}
+
+#logo {
+    position: absolute;
+    margin-left: 1200px;
+    margin-top: 500px;
+    width: 250px;
+    height: auto;
+}
+
+#motto {
+    position: absolute;
+    margin-left: 600px;
+    margin-top: 600px;
+}
+
+#motto2 {
+    position: absolute;
+    margin-left: 0px;
+    margin-top: 400px;
 }
 
 #aboutLink {
