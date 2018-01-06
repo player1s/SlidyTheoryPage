@@ -32,3 +32,43 @@
 body {
     overflow: hidden;
 }
+
+/*Serivces---------------------------*/
+.heading{
+    text-align: center;
+}
+h4.heading{
+    margin-bottom: 20px;
+    font-size: 1.6em;
+}
+.pservices{
+    text-align: center;
+}
+.imgservices{
+    display: block;
+    margin: auto;
+    max-height: 200px;
+    animation: servicereverse 0.5s;
+    animation-fill-mode: forwards;
+}
+.imgservices:hover{
+    animation: service 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes service{
+    from{ transform: translateY(0px);}
+    to{transform: translateY(-10px); }
+}
+@keyframes servicereverse{
+    from{ transform: translateY(-10px);}
+    to{transform: translateY(0px); }
+}
+.boxservices{
+    padding: 20px 0px 20px 0px;
+    background: #fff;
+    margin: 10px 0px 10px 0px;
+    border-bottom: 2px solid #d3d3d3;
+}
+#services{
+    background-color: #E4E4E4;
+}
