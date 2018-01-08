@@ -1,4 +1,7 @@
- #riseTheoryTitle {
+body{
+    background-color: #b3e0ff;
+} 
+#riseTheoryTitle {
     position: absolute;
     margin-left: 500px;
     margin-top: 500px;
