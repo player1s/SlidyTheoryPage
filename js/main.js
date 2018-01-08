@@ -2,28 +2,28 @@ var height = $(window).height();
 var width = $(window).width();
 /* Movement */
 $(document).bind('mousemove', function (e) {
-    $("#servicesLink").css("margin-left", 0 + width / 10 - (e.pageX / 7));
-    $("#servicesLink").css("margin-top", height - height / 10 - (e.pageY / 3));
+    $("#servicesLink").css("margin-left", 0 + width / 10 - (e.pageX / 35));
+    $("#servicesLink").css("margin-top", height - height / 10 - (e.pageY / 23));
     
-    $("#portfolioLink").css("margin-left", width + width / 200 - (e.pageX / 7));
-    $("#portfolioLink").css("margin-top", height - height / 10 - (e.pageY / 3));
+    $("#portfolioLink").css("margin-left", width - width / 20 - (e.pageX / 35));
+    $("#portfolioLink").css("margin-top", height - height / 10 - (e.pageY / 23));
     
-    $("#contactLink").css("margin-left", 0 + width / 10 - (e.pageX / 7));
-    $("#contactLink").css("margin-top", 0 + height / 4 - (e.pageY / 3));
+    $("#contactLink").css("margin-left", 0 + width / 10 - (e.pageX / 35));
+    $("#contactLink").css("margin-top", 0 + height / 8 - (e.pageY / 23));
     
-    $("#aboutLink").css("margin-left", width + width / 200 - (e.pageX / 7));
-    $("#aboutLink").css("margin-top", 0 + height / 4 - (e.pageY / 3));
+    $("#aboutLink").css("margin-left", width - width / 20 - (e.pageX / 35));
+    $("#aboutLink").css("margin-top", 0 + height / 8 - (e.pageY / 23));
     
-    $("#riseTheoryTitle").css("margin-top", 0 + height / 3 + ((e.pageY-height/2) / 3));
-    $("#riseTheoryTitle").css("margin-left", 0 + width / 2 + ((e.pageX-width/2) / 3));
+    $("#riseTheoryTitle").css("margin-top", 0 + height / 6 + ((e.pageY-height/20) / 20));
+    $("#riseTheoryTitle").css("margin-left", 0 + width / 2.55 + ((e.pageX-width/20) / 20));
     
     $("#motto").css("margin-top", 0 + height / 1.4 );
-    $("#motto").css("margin-left", 0 + width / 2.5 + ((e.pageX-width/2) / 3));
+    $("#motto").css("margin-left", 0 + width / 2.5 + ((e.pageX-width/20) / 20));
     
-    $("#motto2").css("margin-left", 0 + width / 10 - (e.pageX / 7));
+    $("#motto2").css("margin-left", 0 + width / 10 - (e.pageX / 20));
     $("#motto2").css("margin-top", 0 + height / 2);
     
-    $("#logo").css("margin-left", width * 0.87 - (e.pageX / 7));
+    $("#logo").css("margin-left", width * 0.87 - (e.pageX / 20  ));
     $("#logo").css("margin-top", 0 + height / 3);
 });
 /* STarting position */
