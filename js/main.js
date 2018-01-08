@@ -5,11 +5,11 @@ var width = $(window).width();
 /* Movement */
 $(document).bind('mousemove', function (e) {
 
-    $("#servicesLink").css("margin-left", 0 + width / 10 - (e.pageX / 7));
-    $("#servicesLink").css("margin-top", height - height / 100 - (e.pageY / 3));
+    $("#servicesLink").css("margin-left", 0 + width / 10 - (e.pageX / 35));
+    $("#servicesLink").css("margin-top", height - height / 10 - (e.pageY / 23));
     
-    $("#portfolioLink").css("margin-left", width + width / 200 - (e.pageX / 7));
-    $("#portfolioLink").css("margin-top", height - height / 100 - (e.pageY / 3));
+    $("#portfolioLink").css("margin-left", width - width / 20 - (e.pageX / 35));
+    $("#portfolioLink").css("margin-top", height - height / 10 - (e.pageY / 23));
 
     
     $("#contactLink").css("margin-left", 0 + width / 10 - (e.pageX / 35));
