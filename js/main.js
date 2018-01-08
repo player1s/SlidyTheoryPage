@@ -1,5 +1,7 @@
+const TRANSITION_DURATION = 3000;
 var height = $(window).height();
 var width = $(window).width();
+
 /* Movement */
 $(document).bind('mousemove', function (e) {
     $("#servicesLink").css("margin-left", 0 + width / 10 - (e.pageX / 7));
