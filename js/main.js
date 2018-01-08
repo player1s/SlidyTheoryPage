@@ -3,10 +3,10 @@ var width = $(window).width();
 /* Movement */
 $(document).bind('mousemove', function (e) {
     $("#servicesLink").css("margin-left", 0 + width / 10 - (e.pageX / 7));
-    $("#servicesLink").css("margin-top", height - height / 10 - (e.pageY / 3));
+    $("#servicesLink").css("margin-top", height - height / 100 - (e.pageY / 3));
     
     $("#portfolioLink").css("margin-left", width + width / 200 - (e.pageX / 7));
-    $("#portfolioLink").css("margin-top", height - height / 10 - (e.pageY / 3));
+    $("#portfolioLink").css("margin-top", height - height / 100 - (e.pageY / 3));
     
     $("#contactLink").css("margin-left", 0 + width / 10 - (e.pageX / 7));
     $("#contactLink").css("margin-top", 0 + height / 4 - (e.pageY / 3));
