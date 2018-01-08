@@ -1,40 +1,33 @@
+/*Event listeners for the page transitions*/
 $(document).ready(function(){
-/*About--------------------------------*/
     $("#aboutLink").click(function(){
-        moveToAboutFromMain();
+        moveToAbout();
         moveMainAwayFromAbout();
     });
     $("#aboutBack").click(function(){
-        moveToMainFromAbout();
+        moveToMain();
         moveAboutAwayFromMain();
     });
-/*Services--------------------------------*/
-    $("#servicesLink").click(function(){
-        moveToServicesFromMain();
-        moveMainAwayFromServices();
+});
+$(document).ready(function(){
+    $("#aboutLink").click(function(){
+        moveToAbout();
+        moveMainAwayFromAbout();
     });
-/*Portfolio--------------------------------*/
-    $("#portfolioLink").click(function(){
-        moveToPortfolioFromMain();
-        moveMainAwayFromPortfolio();
+    $("#aboutBack").click(function(){
+        moveToMain();
+        moveAboutAwayFromMain();
     });
-/*Contact--------------------------------*/    
-    $("#contactLink").click(function(){
-        moveToContactFromMain();
-        moveMainAwayFromContact();
-    });
-    
 });
 
+/*Set initial position and styles for the page*/
 $("#mainWrapper").css({
     "position": "absolute",
-    /*"left": width,
-    "top": -height,*/
     "width": width,
     "height": height,
     "border": "solid 5px red"
 });
-/*About--------------------------------*/
+
 $("#aboutWrapper").css({
     "position": "absolute",
     "left": width,
@@ -44,99 +37,31 @@ $("#aboutWrapper").css({
     "border": "solid 5px blue"
 });
 
-function moveToAboutFromMain() {
+/*Functions to make the movment between the pages*/
+function moveToAbout() {
     $("#aboutWrapper").animate({
             "left": "0px",
             "top": "0px"
-        }, 3000);
+        }, TRANSITION_DURATION);
 }
 
 function moveMainAwayFromAbout() {
     $("#mainWrapper").animate({
             "left": -width,
             "top": height
-        }, 3000);
-}
-
-function moveToMainFromAbout() {
-    $("#aboutWrapper").animate({
-            "left": width,
-            "top": -height
-        }, 3000);
+        }, TRANSITION_DURATION);
 }
 
 function moveAboutAwayFromMain() {
-    $("#mainWrapper").animate({
-            "left": "0px",
-            "top": "0px"
-        }, 3000);
-}
-/*Services--------------------------------*/
-$("#servicesWrapper").css({
-    "position": "absolute",
-    "left": -width,
-    "top": height,
-    "width": width,
-    "height": height,
-    "border": "solid 5px black"
-});
-
-function moveToServicesFromMain() {
-    $("#servicesWrapper").animate({
-            "left": "0px",
-            "top": "0px"
-        }, 3000);
-}
-
-function moveMainAwayFromServices() {
-    $("#mainWrapper").animate({
+    $("#aboutWrapper").animate({
             "left": width,
             "top": -height
-        }, 3000);
+        }, TRANSITION_DURATION);
 }
-/*Portfolio--------------------------------*/
-$("#portfolioWrapper").css({
-    "position": "absolute",
-    "left": width,
-    "top": height,
-    "width": width,
-    "height": height,
-    "border": "solid 5px green"
-});
 
-function moveToPortfolioFromMain() {
-    $("#portfolioWrapper").animate({
+function moveToMain() {
+    $("#mainWrapper").animate({
             "left": "0px",
             "top": "0px"
-        }, 3000);
-}
-
-function moveMainAwayFromPortfolio() {
-    $("#mainWrapper").animate({
-            "left": -width,
-            "top": -height
-        }, 3000);
-}
-/*Contact--------------------------------*/
-$("#contactWrapper").css({
-    "position": "absolute",
-    "left": -width,
-    "top": -height,
-    "width": width,
-    "height": height,
-    "border": "solid 5px pink"
-});
-
-function moveToContactFromMain() {
-    $("#contactWrapper").animate({
-            "left": "0px",
-            "top": "0px"
-        }, 3000);
-}
-
-function moveMainAwayFromContact() {
-    $("#mainWrapper").animate({
-            "left": width,
-            "top": height
-        }, 3000);
+        }, TRANSITION_DURATION);
 }
