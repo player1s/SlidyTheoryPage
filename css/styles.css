@@ -55,6 +55,13 @@ body{
 body {
     overflow: hidden;
 }
+/*-------------About---------*/
+#aboutWrapper{
+    text-align: center;
+}
+#aboutWrapper *{
+    padding: 10px;
+}
 
 /*Serivces---------------------------*/
 .heading{
