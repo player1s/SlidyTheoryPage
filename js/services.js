@@ -44,7 +44,7 @@ function moveServicesAwayFromMain() {
 
 /*Experimental thing with the mouse to scroll*/
 //mousePosition = -1;
-$(document).bind('mousemove', function (e) {
+/*$(document).bind('mousemove', function (e) {
     if (e.pageY > height-height/10) {
         var scroll = $("#servicesWrapper").css("top").replace("px", "");
 //        $("#servicesWrapper").stop(true);
@@ -54,4 +54,4 @@ $(document).bind('mousemove', function (e) {
                 }, 500);
         }
     } 
-});
+});*/
