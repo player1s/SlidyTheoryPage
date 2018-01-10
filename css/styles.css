@@ -63,6 +63,17 @@ body {
 #aboutWrapper *{
     padding: 10px;
 }
+/*-----------Portfolio--------*/
+#portfolioWrapper{
+    text-align: center;
+}
+.switch{
+    font-size: 50px;
+}
+.switchTwo{
+    padding-top: 200px;
+    display: none;
+}
 
 /*Serivces---------------------------*/
 .heading{

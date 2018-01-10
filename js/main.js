@@ -42,3 +42,19 @@ $("#riseTheoryTitle").css("margin-top", 0 + height / 2 );
     $("#contactLink").css("margin-top", 0 + height / 10 );
     $("#aboutLink").css("margin-left", width - width / 10 );
     $("#aboutLink").css("margin-top", 0 + height / 10 );
+
+
+//------------------Portfolio
+
+$(document).ready(function(){
+    var divHeight= $(".switchOne").height();
+    $(".switchTwo").css({"min-height": divHeight});
+});
+
+    $(".switch").hover(function(){   
+    $(this).find('.switchOne').hide();
+    $(this).find('.switchTwo').show();
+}, function(){
+    $(this).find('.switchTwo').hide();
+    $(this).find('.switchOne').show();
+});
