@@ -9,16 +9,6 @@ $(document).ready(function(){
         moveAboutAwayFromMain();
     });
 });
-$(document).ready(function(){
-    $("#aboutLink").click(function(){
-        moveToAbout();
-        moveMainAwayFromAbout();
-    });
-    $("#aboutBack").click(function(){
-        moveToMain();
-        moveAboutAwayFromMain();
-    });
-});
 
 /*Set initial position and styles for the page*/
 $("#mainWrapper").css({
